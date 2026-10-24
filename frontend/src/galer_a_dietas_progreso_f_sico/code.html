@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary": "#561f00", "on-secondary-fixed-variant": "#6d3900", "on-tertiary-container": "#3c0092", "inverse-surface": "#e3e2e7", "surface-container-high": "#292a2e", "on-tertiary": "#3c0091", "on-error": "#690005", "secondary": "#ffb77c", "primary-fixed": "#ffdbcc", "on-tertiary-fixed-variant": "#5516be", "on-primary-fixed": "#351000", "primary-container": "#ff6b00", "secondary-fixed": "#ffdcc2", "surface-container-low": "#1a1b20", "inverse-primary": "#a04100", "surface": "#121317", "surface-container-lowest": "#0d0e12", "primary": "#ffb693", "surface-container-highest": "#343439", "surface-container": "#1f1f24", "on-tertiary-fixed": "#23005c", "error": "#ffb4ab", "tertiary": "#d0bcff", "outline": "#a98a7d", "surface-bright": "#38393d", "surface-dim": "#121317", "on-secondary-container": "#432100", "on-surface": "#e3e2e7", "on-error-container": "#ffdad6", "on-secondary": "#4d2700", "on-primary-container": "#572000", "error-container": "#93000a", "inverse-on-surface": "#2f3035", "secondary-container": "#d37b22", "surface-variant": "#343439", "tertiary-fixed": "#e9ddff", "surface-tint": "#ffb693", "on-background": "#e3e2e7", "tertiary-container": "#a783ff", "primary-fixed-dim": "#ffb693", "on-surface-variant": "#e2bfb0", "tertiary-fixed-dim": "#d0bcff", "on-primary-fixed-variant": "#7a3000", "secondary-fixed-dim": "#ffb77c", "background": "#121317", "on-secondary-fixed": "#2e1500", "outline-variant": "#5a4136" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-md": "1.5rem", "margin-lg": "2.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter-lg": "1.5rem" }, fontFamily: { "label-lg": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "display-hero-mobile": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-hero": ["Space Grotesk"], "label-sm": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "headline-md": ["Space Grotesk"] }, fontSize: { "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500" }], "display-hero-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#121317;background-image:radial-gradient(circle at 15% 10%, rgba(255, 107, 0, 0.12) 0%, transparent 45%), radial-gradient(circle at 85% 90%, rgba(167, 131, 255, 0.08) 0%, transparent 40%), linear-gradient(180deg, #120e0b 0%, #17110c 40%, #0a0a0e 100%);background-attachment:fixed;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="text-on-surface font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 inset-x-0 z-50 pt-safe bg-surface-container-lowest/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="LifeGrid Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Udm7ytQDODCxb31f08CneCGEVE7Al6UyFU_AjlUc_JIMNywuvfpKEJBgFfBbYq5mCnUch8dGa73myGgcBKL8FqfZqrKOhKrqICQekoYJdLEbbif19FJqwota2rhHcti1u9dmSPi7oTBoYIONQkdrqDcjccHPp7W1OwQ4Q9N7bIoQjuwGgYrlWUX4a6Y_Wkj-POLWssj6EO5drzN7gmYzbM4KUjUG71OzVcjPb03bd5N74bkgIOKuQ_Rg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">LifeGrid</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Galería &amp; Dietas</span></div></div><div class="flex items-center gap-space-xs"><button class="min-h-[44px] px-space-sm py-space-xs rounded-lg bg-surface-container-high/60 backdrop-blur-md flex items-center gap-space-xs text-on-surface hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">calendar_today</span><span class="font-label-md text-label-md tracking-tight">Hoy</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></button><button class="relative min-w-[44px] min-h-[44px] rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#ff6b00]"></span></button><div class="min-w-[44px] min-h-[44px] flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCri1NLlpOkDY4KIpMjd1Ial2cRrNuszqyQxLyQLe_BjCV89_jflevJGMGWK9HZ3oed5qaizDS6W39uc7pvb6J3pg0djXoOjLuV_jkdSc0u4MTufF8XSaoFpYf19Mnag88lj9cACXdoH5S0NK8Qz7EoMluLFdrOeYmLG0l4RertoSkeWX01SNJAVTDcghqrH39YHWhlWVPxe7JXetGev0GvEejyWeTc1B2AMBXBiCP953SAPQdz-GQw"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 px-gutter min-h-screen bg-transparent"><div class="flex flex-col w-full gap-space-md">
+<!-- Dynamic Summary Cards Carousel / Stat Bar -->
+<section class="grid grid-cols-3 gap-space-xs">
+<div class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-high/80 shadow-sm backdrop-blur-md">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">photo_library</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">142</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-center mt-0.5">Fotos</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-high/80 shadow-sm backdrop-blur-md">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">84</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-center mt-0.5">Días racha</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-high/80 shadow-sm backdrop-blur-md">
+<div class="flex items-center gap-1 text-primary-container">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">92%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-center mt-0.5">Consistencia</span>
+</div>
+</section>
+<!-- Interactive Filter Tabs -->
+<nav class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar" id="gallery-filters">
+<button class="filter-btn active flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow-md transition-all duration-200" data-filter="all">
+<span class="material-symbols-outlined text-[16px]">dashboard</span>
+<span>Todo el Contenido</span>
+</button>
+<button class="filter-btn flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all duration-200" data-filter="meals">
+<span class="material-symbols-outlined text-[16px]">restaurant</span>
+<span>Comidas &amp; Macros</span>
+</button>
+<button class="filter-btn flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all duration-200" data-filter="body">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span>Físico &amp; Progreso</span>
+</button>
+<button class="filter-btn flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all duration-200" data-filter="workouts">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span>
+<span>Entrenamientos</span>
+</button>
+</nav>
+<!-- Interactive Visual Comparison Card (Before vs After Slider) -->
+<section class="flex flex-col rounded-2xl bg-surface-container-low/90 backdrop-blur-xl p-space-sm shadow-xl overflow-hidden relative">
+<div class="flex items-center justify-between mb-space-xs px-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[20px]">compare</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Evolución Corporal</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm tracking-wider uppercase">Semana 12</span>
+</div>
+<!-- Interactive Slider Viewer -->
+<div class="relative w-full h-64 rounded-xl overflow-hidden select-none touch-none" id="comparison-container">
+<!-- After Image (Base) -->
+<img class="absolute inset-0 w-full h-full object-cover pointer-events-none" data-alt="Athletic fit torso male physique in gym clothing front view dramatic dark studio lighting with soft orange rim lights showing defined abs and muscle tone, high key contrast photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATU3GZ3roKOV4Rr3kuK-XjeWmBSV1-3gJquswA4k93Ax6pLC7wJUiYuBAz3HZ_xTosmyaRQQ2NTDD8XgRVZQCvPvGNYYaTD8CTsu95qEszf_LFycg02EJzm2RszoOjqrq4E2pz4UmnoIezgqatgblicMgur8yQDpRyXZRJq_nLUBINxn3p4THAlK5j_xgM3mR8VKjbzYUyORRuzSpftgvKTZ_wBO3Zx5hnxLPUJ2e4fpOBWBRdnFit"/>
+<div class="absolute bottom-2 right-2 z-10 px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+        24 Oct (71.2 kg)
+      </div>
+<!-- Before Image (Overlay clipped) -->
+<div class="absolute inset-y-0 left-0 overflow-hidden pointer-events-none" id="before-wrapper" style="width: 50%;">
+<div class="relative w-full h-full">
+<img class="absolute inset-0 max-w-none h-full object-cover" data-alt="Soft toned athletic male torso front view starting week fitness journey gym ambient warm lighting subtle muscular definition realistic natural fitness progress shot" id="before-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU23MQ7rieWNl_wL1RqRJVfHGPcHp8K3Lwyi80R4w5niMddWIyIYQOvC-gAUbZDi-6oKxe9DyY_oySDTt9gPpYlVTvl_MbO3EH5bZ3gmc8dUY9E_IBJgDaNgDdbbpmh_dXay5VQVRNnDe94i19ohw3zfnBu4if0KBF3taalfEDmjSch8tGuWhZUdLLm3Wg-aedQGWciQTXVayD1wQlgQeBwBT0S3pF33Vm60hG5yju-FdeGpt_vt7_" style="width: 320px;"/>
+<div class="absolute bottom-2 left-2 z-10 px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+            01 Sep (75.8 kg)
+          </div>
+</div>
+</div>
+<!-- Draggable Splitter Line -->
+<div class="absolute inset-y-0 w-1 bg-primary-container shadow-[0_0_12px_#ff6b00] cursor-ew-resize flex items-center justify-center -ml-0.5 z-20" id="slider-handle" style="left: 50%;">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg transform -translate-x-3.5">
+<span class="material-symbols-outlined text-[18px]">unfold_more</span>
+</div>
+</div>
+</div>
+<!-- Quick Insight Badge -->
+<div class="flex items-center justify-between mt-space-xs px-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">trending_down</span>
+        -4.6 kg masa grasa
+      </span>
+<span class="text-primary font-label-md text-label-md">+1.8 kg músculo limpio</span>
+</div>
+</section>
+<!-- Masonry Visual Feed -->
+<section class="flex flex-col gap-space-sm" id="gallery-grid">
+<!-- Row 1: Staggered Pair (Breakfast Meal + Body Snapshot) -->
+<div class="grid grid-cols-2 gap-space-sm items-start">
+<!-- Item: Breakfast -->
+<article class="flex flex-col rounded-xl bg-surface-container-low/80 backdrop-blur-lg overflow-hidden shadow-md group transition-transform active:scale-[0.98]">
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Top down overhead food photography of fluffy oat pancake rolled with vibrant fresh berries blueberries raspberries honey drizzle on dark ceramic plate ember background styling aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkK8QAL8nVzwukff5_YG4h5pkZ7tFk7ILKJ4Ao_iO0jxdD8PXger9TlLa-Rt__RiBoBbF-2HKJoy_gOg9pSAc4qwo1syrA-oK7OuriXeRfJfWLx-Eap5QK39Osqhlv064zbs6HXosind36Ow4dLToENvip-EWiVGVW6tWEIBXFuSXtADEt-P5q355lvYPKJRDM-ZPlUKLUUcQYfnrQ_ya6FkID3xLjTZIlYMj_HcVL104FNTo8RqPg"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm text-label-sm">
+            08:30 • Desayuno
+          </span>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-md">
+            420 kcal
+          </div>
+</div>
+<div class="p-space-xs flex flex-col gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Tortilla de avena y frutos rojos</h2>
+<div class="flex items-center gap-1 flex-wrap">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">34g Proteína</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Carbos limpios</span>
+</div>
+</div>
+</article>
+<!-- Item: Body Progress Card -->
+<article class="flex flex-col rounded-xl bg-surface-container-low/80 backdrop-blur-lg overflow-hidden shadow-md group transition-transform active:scale-[0.98]">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Side profile body progress check athletic female fitness physique in charcoal sports apparel standing against dark textured minimal wall side lighting accentuating muscular core" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM9ux-beKi6tNFx_5xmlr-TYIdhtYwigThVTsHBVSACT390if9HZNXzdynTyEpBGklOqbFRBMN7qZuQuIOu8Ds9IWfEYg6YEtIQ2eMTjf_bSXViJ8jTVONywEqReL8cR_XhFoitHqIo_PI2gAwGeOYqGO1BhcLYbCCHhjONiMNiZAaHm7Iqos_UPtMgATTIteBcbQKN0pERa-wc1JheFWhrZwQgsVGnN5ERIg5xq3B4pQcpOXgh4UD"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+            Perfil • Sem 12
+          </span>
+<div class="absolute inset-x-0 bottom-0 p-space-xs bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">71.2 kg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cintura: -2 cm</span>
+</div>
+</div>
+<div class="p-space-xs flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span>Comparar</span>
+</button>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">favorite_border</span>
+</div>
+</article>
+</div>
+<!-- Row 2: Workout Highlight (Wide Bento Card) -->
+<article class="flex flex-col rounded-xl bg-surface-container-low/80 backdrop-blur-lg overflow-hidden shadow-md group transition-transform active:scale-[0.99]">
+<div class="relative w-full h-40 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="High performance running shoes tied on an athletic running track wet asphalt at dusk with orange reflective stadium floodlights and neon ember ambient lighting runner perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNnxWnYTMWQD11aOyMCLN_7YyUsEAKLvWLyPHpeCuMQtcuEI-_H6olsCjijaBURKnfRD_U5UcSJ7_qmBj8Vf7M92La8DwbG1-8Ay4OQIn0kXEssbngq2TBtlKow7TMYXPg7gxofJc6DMS1Yz_4IeGm8oCCa_hcQuq1_hnFmKV4K5Txlcd8CMei_qCTyUKNdM8J7z-7ak1CKNuai5cxWg2TRhr6xGxgnfbCLhZNwPE0srQrzamz6ioU"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/90 via-surface-container-lowest/40 to-transparent flex flex-col justify-between p-space-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wide">
+              Récord Personal
+            </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Ayer, 19:15</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">10K en 48min</h2>
+<div class="flex items-center gap-space-sm mt-1 text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">speed</span> 4'48" /km
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">bolt</span> 680 kcal
+              </span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Row 3: Staggered Pair (Lunch & Dinner Bowls) -->
+<div class="grid grid-cols-2 gap-space-sm items-start">
+<!-- Item: Lunch -->
+<article class="flex flex-col rounded-xl bg-surface-container-low/80 backdrop-blur-lg overflow-hidden shadow-md group transition-transform active:scale-[0.98]">
+<div class="relative w-full h-52 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Gourmet healthy lunch featuring pan seared pink salmon fillet with grilled green asparagus avocado slices and lime wedge on dark charcoal plate warm dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiCEijIMcJzrKXWXZKb0WtOzZlSSF8dtjcPDUlMtVls5f4qlMGxHxClNqyT76Vz1nRzhNtbGmtdc4ogecE6F8eO2skDabM1sSYZk-bJR4s7ITGt1cqhEEtThUa70a1-FyjDRyF8y_jbTvV_OdNOXgrTygqjwTyqPH--qJfOTwtGbKWoYf6jaTHeeBpSoFn_-eOrn5GxUFcdp5hucxiCsaxY5nP5rvASl9_RUWZ0DVI_LJzP05a64Lg"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-surface-container-lowest/85 backdrop-blur-md text-secondary font-label-sm text-label-sm">
+            Comida 2
+          </span>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+            580 kcal
+          </div>
+</div>
+<div class="p-space-xs flex flex-col gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Salmón grillado y espárragos</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Grasas saludables &amp; Omega 3</p>
+</div>
+</article>
+<!-- Item: Dinner Salad -->
+<article class="flex flex-col rounded-xl bg-surface-container-low/80 backdrop-blur-lg overflow-hidden shadow-md group transition-transform active:scale-[0.98]">
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Nutritious fitness caesar salad bowl with roasted chicken breast crunchy croutons parmesan cheese shavings and light yogurt dressing in black bowl warm dark aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBakFC23dfyU75ZFHbpsCuYRiZSCKe8j_2pmJgkAR63ptYaKfJYvo4wHMK9gJgT6ErsUIHCDUrRKFfc50LmsB51KlOXag3aHpjNm0AbItgIO7IzTPs-pLGHbMfyi4eGrvXwr6L40E4Hmn7nHEynwnvE7cLE1wQOw4orMuwjhUeP1wmaau3PtDR7jSkx26oGsjG3Yki4bCg-5xUDujVfYIxmdRSfQI0bapYS7J8q2KJXh58Im32s2QRG"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm text-label-sm">
+            Comida 3
+          </span>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md">
+            360 kcal
+          </div>
+</div>
+<div class="p-space-xs flex flex-col gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Ensalada César Fit Ligera</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cena baja en sodio</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Quick-Upload Floating Action Ribbon -->
+<div class="sticky bottom-24 inset-x-0 z-30 flex justify-center pointer-events-none">
+<button class="pointer-events-auto flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-primary-container via-secondary-container to-secondary text-on-primary font-headline-sm text-headline-sm shadow-[0_8px_28px_rgba(255,107,0,0.5)] active:scale-95 transition-all" id="upload-trigger-btn">
+<span class="material-symbols-outlined text-[22px]">add_a_photo</span>
+<span>Subir foto a la bitácora</span>
+</button>
+</div>
+<!-- Interactive Micro Modal / Drawer (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl flex flex-col justify-end hidden opacity-0 transition-opacity duration-200" id="upload-dialog">
+<div class="w-full bg-surface-container rounded-t-3xl p-space-md flex flex-col gap-space-md shadow-2xl max-w-lg mx-auto">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[24px]">cloud_upload</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nueva Entrada Visual</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant" id="close-modal-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Category Selectors -->
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="flex flex-col items-center gap-1.5 p-space-sm rounded-xl bg-surface-container-high hover:bg-primary-container hover:text-on-primary transition-colors text-on-surface">
+<span class="material-symbols-outlined text-[24px]">restaurant_menu</span>
+<span class="font-label-md text-label-md">Plato / Dieta</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 p-space-sm rounded-xl bg-surface-container-high hover:bg-primary-container hover:text-on-primary transition-colors text-on-surface">
+<span class="material-symbols-outlined text-[24px]">accessibility_new</span>
+<span class="font-label-md text-label-md">Foto Físico</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 p-space-sm rounded-xl bg-surface-container-high hover:bg-primary-container hover:text-on-primary transition-colors text-on-surface">
+<span class="material-symbols-outlined text-[24px]">sports_score</span>
+<span class="font-label-md text-label-md">Sesión Gym</span>
+</button>
+</div>
+<!-- Quick Upload Dropzone -->
+<div class="h-28 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-2 text-on-surface-variant cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-[32px]">photo_camera_back</span>
+<span class="font-body-sm text-body-sm">Toca para abrir cámara o carrete</span>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm shadow-md" id="confirm-upload-btn">
+        Guardar en LifeGrid
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Split Before / After Slider Interaction
+  const container = document.getElementById('comparison-container');
+  const beforeWrapper = document.getElementById('before-wrapper');
+  const beforeImg = document.getElementById('before-img');
+  const sliderHandle = document.getElementById('slider-handle');
+
+  function updateSlider(clientX) {
+    if (!container || !beforeWrapper || !sliderHandle) return;
+    const rect = container.getBoundingClientRect();
+    let position = (clientX - rect.left) / rect.width;
+    if (position < 0.05) position = 0.05;
+    if (position > 0.95) position = 0.95;
+    
+    const percentage = position * 100;
+    beforeWrapper.style.width = percentage + '%';
+    sliderHandle.style.left = percentage + '%';
+    if (beforeImg) {
+      beforeImg.style.width = rect.width + 'px';
+    }
+  }
+
+  // Adjust before image base size on layout load
+  function syncImgWidth() {
+    if (container && beforeImg) {
+      beforeImg.style.width = container.offsetWidth + 'px';
+    }
+  }
+  window.addEventListener('resize', syncImgWidth);
+  syncImgWidth();
+
+  let isDragging = false;
+  if (container) {
+    container.addEventListener('pointerdown', (e) => {
+      isDragging = true;
+      updateSlider(e.clientX);
+    });
+    window.addEventListener('pointermove', (e) => {
+      if (!isDragging) return;
+      updateSlider(e.clientX);
+    });
+    window.addEventListener('pointerup', () => {
+      isDragging = false;
+    });
+  }
+
+  // Filter Bar Tabs Interaction
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-md');
+        b.classList.add('bg-surface-container-high/70', 'text-on-surface-variant');
+      });
+      btn.classList.remove('bg-surface-container-high/70', 'text-on-surface-variant');
+      btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-md');
+    });
+  });
+
+  // Modal Open/Close Controls
+  const triggerBtn = document.getElementById('upload-trigger-btn');
+  const uploadDialog = document.getElementById('upload-dialog');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+  const confirmBtn = document.getElementById('confirm-upload-btn');
+
+  function openModal() {
+    if (!uploadDialog) return;
+    uploadDialog.classList.remove('hidden');
+    setTimeout(() => {
+      uploadDialog.classList.remove('opacity-0');
+      uploadDialog.classList.add('opacity-100');
+    }, 10);
+  }
+
+  function closeModal() {
+    if (!uploadDialog) return;
+    uploadDialog.classList.remove('opacity-100');
+    uploadDialog.classList.add('opacity-0');
+    setTimeout(() => {
+      uploadDialog.classList.add('hidden');
+    }, 200);
+  }
+
+  if (triggerBtn) triggerBtn.addEventListener('click', openModal);
+  if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+  if (confirmBtn) confirmBtn.addEventListener('click', closeModal);
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary [&amp;_span.indicator]:opacity-100 [&amp;_span.indicator]:scale-100"><div class="relative flex justify-around items-center h-20 px-space-xs max-w-lg mx-auto"><a class="group relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 py-1 text-on-surface-variant hover:text-on-surface transition-all" data-path="calendario" href="#"><span class="indicator absolute -top-1 w-8 h-1 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 shadow-[0_0_12px_#ff6b00]"></span><span class="material-symbols-outlined text-[24px]">calendar_month</span><span class="font-label-sm text-label-sm mt-1">Calendario</span></a><a class="group relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 py-1 text-on-surface-variant hover:text-on-surface transition-all" data-path="linea-de-vida" href="#"><span class="indicator absolute -top-1 w-8 h-1 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 shadow-[0_0_12px_#ff6b00]"></span><span class="material-symbols-outlined text-[24px]">timeline</span><span class="font-label-sm text-label-sm mt-1">Línea Vida</span></a><div class="flex items-center justify-center min-w-[56px] min-h-[56px] px-space-xs -translate-y-4"><a class="relative w-14 h-14 rounded-full bg-gradient-to-tr from-primary-container to-secondary flex items-center justify-center text-on-primary-container shadow-[0_8px_24px_rgba(255,107,0,0.45)] active:scale-95 transition-transform" data-path="nuevo-registro" href="#"><span class="material-symbols-outlined text-[30px] font-bold text-on-primary">add</span></a></div><a class="group relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 py-1 text-on-surface-variant hover:text-on-surface transition-all" data-path="galeria-y-dietas" href="#"><span class="indicator absolute -top-1 w-8 h-1 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 shadow-[0_0_12px_#ff6b00]"></span><span class="material-symbols-outlined text-[24px]">restaurant</span><span class="font-label-sm text-label-sm mt-1">Dietas</span></a><a class="group relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 py-1 text-on-surface-variant hover:text-on-surface transition-all" data-path="rutinas-y-alarmas" href="#"><span class="indicator absolute -top-1 w-8 h-1 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 shadow-[0_0_12px_#ff6b00]"></span><span class="material-symbols-outlined text-[24px]">alarm</span><span class="font-label-sm text-label-sm mt-1">Rutinas</span></a></div></nav></body></html>
